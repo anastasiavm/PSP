@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <span>Median Filter</span>
+        <span>&copy; Bubuz</span>
+    </header>
+
+    <div id="content-container">
+        <div class="form-container">
+            <div class="form">
+                <div class="input-container">
+                    <label for="filter-size">Размер фильтра</label>
+                    <input id="filter-size" type="number" value="3">
+                </div>
+
+                <div id="file-choose-btn-container">
+                    <input id="img_input" type="file" accept="image/jpeg,image/png" multiple>
+                    <label for="img_input">Выберите файл</label>
+                </div>
+
+                <div class="button-container">
+                    <button id="btn-set-filter" disabled>
+                        <span>Обработать</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="images-container">
+            <span>Исходное изображение</span>
+            <div id="stock-image-container">
+
+            </div>
+
+            <span>Модифицированное изображение</span>
+            <div id="modified-image-container">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
